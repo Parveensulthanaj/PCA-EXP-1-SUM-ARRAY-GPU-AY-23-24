@@ -29,7 +29,7 @@ Google Colab with NVCC Compiler
 6. Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## PROGRAM:
-## 512:
+## Threads=512:
 ```
    %%cuda
     #include <cuda_runtime.h>
@@ -262,7 +262,7 @@ Google Colab with NVCC Compiler
 
 ```
 
-## 1024:
+## Threads=1024:
 ```
  %%cuda
     #include <cuda_runtime.h>
@@ -493,7 +493,7 @@ Google Colab with NVCC Compiler
         return(0);
     }
 ```
-## 1023:
+## Threads=1023:
 ```
  %%cuda
     #include <cuda_runtime.h>
@@ -725,7 +725,7 @@ Google Colab with NVCC Compiler
     }
 ```
 
-## 256:
+## Threads=256:
 ```
  %%cuda
     #include <cuda_runtime.h>
@@ -958,16 +958,16 @@ Google Colab with NVCC Compiler
 ```
 ## OUTPUT:
 
-## blockx.x 512:
+## Threads 512:
 <img width="405" height="100" alt="pca1 1" src="https://github.com/user-attachments/assets/b4a9fccd-fd30-4dde-ae8b-e3fd8d4a5083" />
 
-## blockx.x 1024:
+## Threads 1024:
 <img width="421" height="94" alt="pca1 2" src="https://github.com/user-attachments/assets/1cda2915-ca7a-4dd4-b586-2bdf6c788e0c" />
 
-## blockx.x 1023:
+## Threads 1023:
 <img width="387" height="92" alt="pca1 3" src="https://github.com/user-attachments/assets/30993cf5-de47-46f4-ba49-829fcbd47211" />
 
-## blockx.x 256:
+## Threads 256:
 <img width="442" height="98" alt="pca1 4" src="https://github.com/user-attachments/assets/05de8c4b-f0ae-485f-a1d7-f0a615f7214f" />
 
 
